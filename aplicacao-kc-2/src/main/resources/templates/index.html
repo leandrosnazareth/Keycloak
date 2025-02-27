@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Sistema de Exemplo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #4a8548;
+            color: white;
+        }
+        .card-body {
+            background-color: #f1f1f1;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .btn-primary {
+            background-color: #4a8548;
+            border-color: #4a8548;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Sistema de Exemplo 2</h1>
+        <h1>Olá, <span th:text="${name}"></span>! Você está autenticado.</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Informações do Sistema</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac augue dui. Integer vel vehicula metus, at volutpat nulla. Fusce convallis libero sit amet justo volutpat, eget fermentum turpis interdum.</p>
+                        <p>Nulla facilisi. Maecenas et cursus leo. Ut varius purus vel massa ultricies, at tincidunt tortor efficitur. Vestibulum ut nunc ac dui volutpat fermentum a eget eros. Curabitur eu purus eget libero ultricies cursus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Detalhes do Usuário</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>User: <span th:text="${name}"></span></p>
+                        <p>E-mail: <span th:text="${email}"></span></p>
+                        <p>Autentication: <span th:text="${subject}"></span></p>
+                        <p>Status: Ativo</p>
+                        <p>Permissão: User</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Atividades Recentes</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Usuário <span th:text="${name}"></span> realizou login.</li>
+                            <li>O sistema foi atualizado para a versão 1.0.</li>
+                            <li>Novos dados foram adicionados à base de dados.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="/logout" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
