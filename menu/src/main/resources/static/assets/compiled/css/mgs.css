@@ -1,0 +1,18 @@
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Diminui a altura da barra */
+}
+
+.header-top .logo {
+    flex: 1;
+}
+
+.header-top .header-top-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
