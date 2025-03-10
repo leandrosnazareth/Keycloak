@@ -16,8 +16,8 @@ COPY apps/aplicacao-kc-2.jar /apps/aplicacao-kc-2/
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
-# Exponha a porta necessária e as portas JMX
+# Exponha as portas necessárias
 EXPOSE 8081 8082 8083
 
-# Comando para iniciar todas as aplicações
+# Defina o script como comando padrão
 CMD ["/start.sh"]

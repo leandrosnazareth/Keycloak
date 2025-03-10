@@ -21,4 +21,9 @@ public class HomeController {
         //redirecionar para localhost:8082/
         return "redirect:http://localhost:8083/secure";
     }
+
+    @GetMapping("/menu")
+    public String menu() {
+        return "menu";
+    }
 }

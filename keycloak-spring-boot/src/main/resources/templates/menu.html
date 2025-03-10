@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mostlikers | Google Menu</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+    <style>
+      body{background: #f9f9f9;font-family: 'Roboto', sans-serif;}
+      a:hover{text-decoration: none;}
+      header {
+        background: #fff;
+        border-bottom: dashed 2px #0c617d;
+      }
+      .menu-grid {
+        text-align: right;
+        padding: 29px 0;
+      }
+      .menu-grid .btn-group {
+        margin-right: 80px;
+      }
+      .menu-grid .dropdown-toggle, 
+      .menu-grid .dropdown-toggle:hover, 
+      .menu-grid .dropdown-toggle:focus, 
+      .menu-grid .dropdown-toggle:active, 
+      .menu-grid .btn-group.open .dropdown-toggle {
+        border: 0;
+        float: right;
+        box-shadow: none;
+        background: transparent;
+      }
+      .menu-grid .btn-default:after {
+        padding-left: 4px;
+        line-height: 20px;
+        display: inline-block;
+        content: "+ Mostlikers";
+        color: #0000 !important;
+      }
+      .menu-grid .btn-default img {
+        height: 18px;
+        vertical-align: bottom;
+      }
+      .menu-grid .dropdown-menu {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        left: auto;
+        right: 35px;
+        margin-top: 10px;
+        box-shadow: none;
+        border-radius: 3px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 8px 0 #393939;
+      }
+      .menu-grid .list {
+        width: 380px;
+        position: relative;
+        padding: 15px 25px;
+      }
+      .menu-grid .list:after {
+        bottom: 100%;
+        right: 20px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: #FFFFFF;
+        border-width: 8px;
+        margin-right: 0px;
+      }
+      .menu-grid .list .menu {
+        padding: 20px 0;
+        color: #333333;
+        text-align: center;
+        border-radius: 2px;
+        border: 1px solid transparent;
+        box-shadow: 0 0 1px 0 transparent;
+      }
+      .menu-grid .list .menu:hover {
+        border: 1px solid #e8e8e8;
+        box-shadow: 0 0 1px 0 #dddddd;
+      }
+      .menu-grid .menu span {
+        width: 55px;
+        height: 55px;
+        display: block;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+        background-image: url('v1_376447c3.png');
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row home-nav">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-ld-3">
+          <a href="https://www.mostlikers.com">
+            <img src="http://2.bp.blogspot.com/-ACPNUKELfPo/VAi1614YnwI/AAAAAAAABMk/yUEk1GIOuNQ/s1600/mos.png" alt="mostlikers Logo" id="logo-img">
+          </a>
+        </div>
+        <!-- menu starts here -->
+        <div class="col-xs-12 col-sm-3 col-md-3 col-ld-3 pull-right menu-grid">
+          <div class="navbar-header pull-left">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#login_menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="btn-group">
+            <img src="grid.png" alt="grid-icon"/>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"></button>
+            <div class="dropdown-menu" role="menu">            
+              <div class="list">
+                <div class="row">
+                  <div class="col-sm-4 col-xs-6">
+                    <a href="#" th:href="@{https://www.blogger.com}">
+                      <span class="blog"></span>
+                      <div class="menu"><span></span>Blogger</div>
+                    </a>
+                  </div>
+                  <div class="col-sm-4 col-xs-6">
+                    <a href="#" th:href="@{https://plus.google.com}">
+                      <div class="menu"><span></span>+Google</div>
+                    </a>
+                  </div>
+                  <div class="col-sm-4 col-xs-6">
+                    <a href="#" th:href="@{https://translate.google.com}">
+                      <div class="menu"><span></span>Translater</div>
+                    </a>
+                  </div>
+                  <div class="col-sm-4 col-xs-6">
+                    <a href="#" th:href="@{https://www.youtube.com}">
+                      <div class="menu"><span></span>Youtube</div>
+                    </a>
+                  </div>
+                  <div class="col-sm-4 col-xs-6">
+                    <a href="#" th:href="@{https://drive.google.com}">
+                      <div class="menu"><span></span>Drive</div>
+                    </a>
+                  </div>
+                  <div class="col-sm-4 col-xs-6">
+                    <a href="#" th:href="@{https://www.google.com/search}">
+                      <div class="menu"><span></span>Search</div>
+                    </a>
+                  </div>
+                  <div class="col-sm-4 col-xs-6">
+                    <a href="#" th:href="@{https://www.google.com/maps}">
+                      <div class="menu"><span></span>Maps</div>
+                    </a>
+                  </div>
+                  <div class="col-sm-4 col-xs-6">
+                    <a href="#" th:href="@{https://www.google.com/calendar}">
+                      <div class="menu"><span></span>Calender</div>
+                    </a>
+                  </div>
+                  <div class="col-sm-4 col-xs-6">
+                    <a href="#" th:href="@{https://mail.google.com}">
+                      <div class="menu"><span></span>Gmail</div>
+                    </a>
+                  </div>
+                </div>
+              </div>          
+            </div>
+          </div>
+        </div>
+        <!-- menu ends here -->
+      </div>
+    </header>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.dropdown-menu').show();
+        $('.menu-grid .btn-group').hover(function(){
+          $('.dropdown-menu', this).stop(true, true).delay(200).fadeIn();
+        }, function(){
+          $('.dropdown-menu', this).stop(true, true).delay(1000).fadeOut('fast');
+        });
+      });
+    </script>
+  </body>
+</html>
